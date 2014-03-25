@@ -5,16 +5,47 @@
 % XXX: you may want to talk about what agent societies are
 Social norms in multi-agent systems and agent societies are beneficial for several reasons.
 They improve coordination and reduce cognitive load. % CN
-However, agents cannot always agree on norms offline since properties of the society at hand may not be unknown or changing over time.
+However, agents cannot always agree on norms offline since properties of the society at hand may  be unknown or changing over time.
 Furthermore, design of rules may be computationally hard.
 % -- when the interactionist approach makes sense --
 These assumptions have inspired the so-called interactionist approach to norms in multi-agent systems, % CN
 where society is able to dynamically converge to norms.
 Different works have studied different assumptions on this [...]. % XXX more on a brief intro for interactionist approach.
 
+% -- Assumptions on agents
+One assumption on agents we would focus in this paper will be that agents cannot observe their peers' past actions
+and rewards. % XXX: other features?
+In several scenarios this has been shown to be sufficient for agents to converge to norms. % CN % Sen + the whole Villatoro line
+% XXX ...
+This set of assumptions is called ``social learning'' scenario. % CN Sen
+                                % % XXX
+
+
 % Describe scenario
-In this work we will assume a slightly different scenario. We will
-assume the interactionist perspective % XXX: change phrasing
+In this work we will assume agents' adaptation mechanisms as given and
+that we are
+within the social learning framework.
+We study a slightly more specific scenario  than the traditional one.
+In particular the question we want to ask is the following:
+
+\begin{center}
+\emph{
+Can we achieve the  emergence of a specific conventions in a society without any
+additional reward or punishment on agents and minimal deployment of resources?
+}
+\end{center}
+
+% -- Intuitive scenario --
+The following metaphor expresses the scenario we want to study:
+% XXX... 
+
+% -- More elaboration on how we are going to study this problem --
+% Here I elaborate on the two main features: 
+% - no punishment/reward
+% - minimal deployment of resources
+
+
+We will study the problem of conventions emergence when pushing 
 from the point of view of a system designer who aims at pushing
 agents towards specific conventions. We will assume that we, as sytem
 designers, know the norms we prefer more.
@@ -22,6 +53,8 @@ However, we will assume that  these norms cannot
 be imposed globally (e.g. because it would take too many resources)
 and that there are limited resources to push rules anyway.
 % XXX: give intuitions behind scenario with specific examples?
+
+% -- Cases of games we want to treat -- XXX [might go later]
 \begin{comment}
 Two cases here:
 - Is it possible to push norms that are equivalent from the agent's
@@ -30,3 +63,8 @@ point of view? (coordination games)
 point of view? And if yes, which? (Think of the Prisoner's dilemma
 case).
 \end{comment}
+
+% After 
+
+% -- Assumptions on the types of agents --
+If we are not using reward/punishment how are we going to be 
